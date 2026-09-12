@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #151e3f;
+  color: white;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#fotoPrincipalContainer,
+#fotoPrincipalContainer img {
+  height: 500px;
+  border-radius: 5%;
+}
+
+#spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #accbe1; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-top: 180px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#botonesContainer{
+    display: flex;
+}
+
+button {
+    font-size: large;
+    background-color: #accbe1;
+    color: #151e3f;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 10px 20px;
+    transition: 100ms ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#like:hover {
+    background-color: #b4d175;
+}
+
+#dislike:hover {
+    background-color: #d5202f;
+}
+
+.perrosContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 50vw;
+  margin: 5px 0;
+}
+
+.perrosContainer img {
+  max-height: 100px;
+}
+
+#perrosLikeContainer {
+  background-color: rgb(180, 209, 117, 0.5);
+}
+
+#perrosDislikeContainer {
+  background-color: rgb(213, 32, 47, 0.2);
+}
+
+.escondido {
+  display: none;
+}
