@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Lista de perros</title>
-    <script src="index.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <h1>¿Te gusta este perro?</h1>
@@ -15,9 +15,12 @@
         <img src="" alt="Perrito lindo" id="perroActual" />
     </div>
     <div id="botonesContainer">
-      <button id="like">Me gusta</button>
       <button id="saltear">Saltear</button>
-      <button id="dislike">No me gusta</button>
+      <div id="botonesmegusta">
+        <button id="like">Me gusta</button>
+        <button id="dislike">No me gusta</button>
+      </div>
+      <p id="mensaje" class="escondido"></p>
     </div>
     <div class="perrosContainer" id="perrosLikeContainer"></div>
     <div class="perrosContainer" id="perrosDislikeContainer"></div>
