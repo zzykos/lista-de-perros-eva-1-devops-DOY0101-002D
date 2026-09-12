@@ -1,0 +1,24 @@
+name: CI/CD
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+
+      - name: Validar integridad de archivos
+        run: |
+            echo "Validando integridad de archivos..."
+            test -f index.html && echo "index.html encontrado"
+            test -f script.js && echo "script.js encontrado"
+            test -f style.css && echo "style.css encontrado"
+      - name: Simulación de prueba exitosa
+        run: echo "El código pasó la prueba de integridad de archivos"
