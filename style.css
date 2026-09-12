@@ -2,7 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #eff9ff;
+  background-color: #151e3f;
+  color: white;
 }
 
 h1{
@@ -12,11 +13,12 @@ h1{
 #fotoPrincipalContainer,
 #fotoPrincipalContainer img {
   height: 500px;
+  border-radius: 5%;
 }
 
 #spinner {
   border: 16px solid #f3f3f3; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
+  border-top: 16px solid #accbe1; /* Blue */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -35,14 +37,39 @@ h1{
 
 #botonesContainer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#botonesmegusta{
+    display: flex;
+    justify-content: center;
+}
+
+#saltear{
+  width: 100%;
+  max-width: 50vw;
+  margin-bottom: 5px;
+}
+
+#mensaje{
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #accbe1;
+  height: 25px;
 }
 
 button {
-    font-size: xx-large;
-    background-color: unset;
+    font-size: large;
+    background-color: #accbe1;
+    color: #151e3f;
+    border: none;
+    border-radius: 10px;
     padding: 1rem;
     margin: 10px 20px;
     transition: 100ms ease-in-out;
+    cursor: pointer;
 }
 
 button:hover {
@@ -50,21 +77,21 @@ button:hover {
 }
 
 #like:hover {
-    background-color: #00ff2a23;
+    background-color: #b4d175;
 }
 
 #dislike:hover {
-    background-color: #79000023;
+    background-color: #d5202f;
 }
 
 .perrosContainer {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
-  border-radius: 50px;
-  max-width: 70vw;
-  margin: 10px 0;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 50vw;
+  margin: 5px 0;
 }
 
 .perrosContainer img {
@@ -72,11 +99,11 @@ button:hover {
 }
 
 #perrosLikeContainer {
-  background-color: #00ff2a23;
+  background-color: rgb(180, 209, 117, 0.5);
 }
 
 #perrosDislikeContainer {
-  background-color: #ff000023;
+  background-color: rgb(213, 32, 47, 0.2);
 }
 
 .escondido {

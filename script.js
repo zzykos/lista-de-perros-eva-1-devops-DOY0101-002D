@@ -1,5 +1,6 @@
 const perroActualElement = document.getElementById("perroActual");
 const spinner = document.getElementById("spinner");
+const mensajeFeedback = document.getElementById("mensaje");
 const perrosLikeContainer = document.getElementById("perrosLikeContainer");
 const perrosDislikeContainer = document.getElementById(
   "perrosDislikeContainer"
@@ -26,11 +27,17 @@ function rankearPerro(ranking) {
   nuevaImagen.src = perroActual;
   if (ranking === "+") {
     perrosLikeContainer.appendChild(nuevaImagen);
-    perrosLikeContainer.classList.toggle("escondido",false)
+    perrosLikeContainer.classList.toggle("escondido",false);
+    mensaje.textContent = "Se añadió a lista de me gusta";
   } else {
     perrosDislikeContainer.appendChild(nuevaImagen);
     perrosDislikeContainer.classList.toggle("escondido",false)
+    mensaje.textContent = "Se añadió a lista de no me gusta";
   }
+  mensaje.classList.remove("escondido");
+  setTimeout(() => {
+    mensaje.classList.add("escondido");
+  }, 2000);
   nuevoPerro();
 }
 
