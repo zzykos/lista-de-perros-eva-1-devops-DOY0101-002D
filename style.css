@@ -37,6 +37,27 @@ h1{
 
 #botonesContainer{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#botonesmegusta{
+    display: flex;
+    justify-content: center;
+}
+
+#saltear{
+  width: 100%;
+  max-width: 50vw;
+  margin-bottom: 5px;
+}
+
+#mensaje{
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #accbe1;
+  height: 25px;
 }
 
 button {
