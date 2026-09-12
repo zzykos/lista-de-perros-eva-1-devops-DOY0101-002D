@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de perros</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1>¿Te gusta este perro?</h1>
+    <div id="fotoPrincipalContainer">
+        <div class="loader" id="spinner"></div>
+        <img src="" alt="Perrito lindo" id="perroActual" />
+    </div>
+    <div id="botonesContainer">
+      <button id="like">Me gusta</button>
+      <button id="saltear">Saltear</button>
+      <button id="dislike">No me gusta</button>
+    </div>
+    <div class="perrosContainer" id="perrosLikeContainer"></div>
+    <div class="perrosContainer" id="perrosDislikeContainer"></div>
+  </body>
+</html>
