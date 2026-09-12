@@ -18,7 +18,7 @@ jobs:
         run: |
             echo "Validando integridad de archivos..."
             test -f index.html && echo "index.html encontrado"
-            test -f script.js && echo "script.js encontrado"
+            test -f index.js && echo "index.js encontrado"
             test -f style.css && echo "style.css encontrado"
       - name: Simulación de prueba exitosa
         run: echo "El código pasó la prueba de integridad de archivos"
